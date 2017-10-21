@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<!--esto es para especificar e idioma de nuestra pagina web-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario web</title>
+    <!-- Orden del archivo debe ser librerias, plugins,main.css-->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!--header.header-page-->
+        <header class="header-page">
+            <h1>Formulario</h1>
+        </header>
+
+
+        <main class="main-page">
+            <!--(section.section-page>h2{sección $}+p>lorem50)*4-->
+            <section class="section-page">
+                <h2>Contacto</h2>
+                <!--
+
+                    alt + shift+ f= es para darle formato ordenado al código
+                    alt + shift= es para copiar la línea de código
+                    alt= para mover la línea de código de lugar
+                    cmd + d= con el texto seleccionado se le da esas teclas y selecciona varios textos
+                    Atributo id: se sugiere utilizar formato "camelcase". Se recomienda que se escriban en inglés
+                        camelcase:
+                            - uppercase: pone todas las paabras en mayuscula sin ningun espacio, ej. MiAtributoId
+                            - lowercase: pone la primer palabra en miniscula y las de mas en mayuscula, ej. miAtributoId
+
+
+                    Atributo "action": se tiene que especificar la ruta (path) del archivo que va a gestionar los datos del formulario
+                    
+                    input: Elemento de entrada de datos
+                        tipos (types):
+                            - text: entrada de texto
+                                    - tel
+                                    - number
+                                    - url
+                            - radio: cuando solo se pude seleccionar un elemento
+                            - checkbox: cuando se pueden seleccionar varios elementos
+                            - submit: para subir el formulario
+                            - reset: para limpiar todo el formulario
+                            - password: paraponer contraseñas
+                            - email: para solicitar correo electrónico
+                            - file: para enviar archivos
+
+                    Select: combo de múltiples opciones
+                        - option: las opciones del elemento select
+                    text area: para poner un cuadro de texto
+                    - -->
+                <form action="#" class="form" novalidate>
+                    <div class="form__element">
+                        <label for="formName" class="form__label">Nombre:</label>
+                        <input id="formName" class="form__input" type="text" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formTel" class="form__label">Teléfono:</label>
+                        <input id="formTel" class="form__input" type="tel" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formEmail" class="form__label">Correo electrónico:</label>
+                        <input id="formEmail" class="form__input" type="email" />
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formUrl" class="form__label">Sitio web:</label>
+                        <input id="formUrl" class="form__input" type="url" />
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label">Sexo</span>
+
+                        <input id="formFemale" type="checkbox" />
+                        <label for="formFemale">Femenino</label>
+
+                        <input id="formMale" type="checkbox" />
+                        <label for="formMale">Masculino</label>
+                    </div>
+
+                    <div class="form__element">
+                        <span class="form__label">Pasatiempos</span>
+
+                        <input id="formRead" type="checkbox" />
+                        <label for="formRead">Leer</label>
+
+                        <input id="formSwim" type="checkbox" />
+                        <label for="formSwim">Nadar</label>
+
+                        <input id="formRun" type="checkbox" />
+                        <label for="formRun">Correr</label>
+
+                    </div>
+
+                    <div class="form__element">
+                        <label for="formNationality" class="form__label">Nacionalidad</label>
+                        <select id="formNationality" class="form__select">
+                            <option>Selecciona tu nacionalidad</option>
+                            <option>México</option>
+                            <option>Argentina</option>
+                            <option>Francia</option>
+                        </select>
+                    </div>
+                    <div class="form__element">
+                        <label for="formMessage" class="form__label">Escribe tu opinión</label>
+                        <textarea id="formMessage" ></textarea>
+                    </div>
+
+                    <div class="form__element">
+                        <input type="reset" value="Limpiar formulario" class="form__button" />
+                        <input type="submit" value="Enviar datos" class="form__button form__button--main"  />
+
+                    </div>
+
+
+                </form>
+            </section>
+        </main>
+
+        <footer class="foter-page">
+            <p>Todos los derechos reservados | Mónica Nicolás | 2017</p>
+        </footer>
+
+    </div>
+
+    <!--Vincular los documentos java scrips siempre antes de la etiqueta de cierre de body-->
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

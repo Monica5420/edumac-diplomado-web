@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/* Aqui empieza el estilo general */
+body{margin: 0; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;}
+
+ul,ol{margin: 0; 
+    padding: 0; 
+    list-style-type: none;}
+
+img{display: block;
+     max-width:100%;}
+
+.container{ max-width: 1200px;
+     margin: 0 auto;}
+/* Aqui empieza el estilo de header */
+
+/* Aqui empieza el estilo nav */
+
+/* Aqui empieza el estilo main */
+
+/* Aqui empieza el estilo footer */
+
+/* Forms */
+.form { border: 1px solid #87878b; 
+    padding: 25px 50px;}
+
+.form__label { 
+    display: block;
+margin-bottom: 2px;
+font-weight: 600;}
+
+.form__element{margin-bottom: 15px;}
+
+.form__input, 
+.form__textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #87878b;
+    font-size: 16px;
+    outline: none;
+}
+.form__input:focus,
+.form__textarea:focus {
+    border-color: #eeee0b;
+}
+
+.form__textarea {
+    height: 100px;
+}
+
+.form__button{
+    background-color:transparent; 
+    padding: 15px 25px; 
+    border: 1px solid #f3a5e9;
+    font-size: 16px;
+    cursor: pointer;
+    color: #daa0e9;
+    transition: all .3s;
+}
+
+.form__button:hover{
+    background-color: #f7f7d2;
+}
+
+.form__button--main{
+    background-color: #eeee0b;
+    border-color: #eeee0b;
+    color: #FFF;
+}
+
+.form__button--main:hover{
+    background-color: #f7f7d2;
+}
+/* Aqui empieza el estilo helper */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: block;
+}
+
+.clearfix:after{
+    clear: both
+}
