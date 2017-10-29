@@ -52,69 +52,77 @@
                     Select: combo de múltiples opciones
                         - option: las opciones del elemento select
                     text area: para poner un cuadro de texto
+
+                    - Atributo "value" sirve para establecer un valor por defecto
+
+                    -Atributo "checked" sirve para seleccionar un valor por defecto en los elementos imputde tipo checbox y radio
+                    
+                    -Atributo "disabled" es para desactivar un campo
+
+                    -Atributo "selected" sirve para determinar un valor por defecto en los elementos de tipo select
                     - -->
-                <form action="#" class="form" novalidate>
+                <form id="formContact" action="#" class="form" method="post" novalidate>
                     <div class="form__element">
                         <label for="formName" class="form__label">Nombre:</label>
-                        <input id="formName" class="form__input" type="text" />
+                        <input id="formName" class="form__input" type="text" name="formName" required/>
                     </div>
 
                     <div class="form__element">
                         <label for="formTel" class="form__label">Teléfono:</label>
-                        <input id="formTel" class="form__input" type="tel" />
+                        <input id="formTel" class="form__input" type="tel" name="formTel" required/>
                     </div>
 
                     <div class="form__element">
                         <label for="formEmail" class="form__label">Correo electrónico:</label>
-                        <input id="formEmail" class="form__input" type="email" />
+                        <input id="formEmail" class="form__input" type="email" name="formEmail" required/>
                     </div>
 
                     <div class="form__element">
                         <label for="formUrl" class="form__label">Sitio web:</label>
-                        <input id="formUrl" class="form__input" type="url" />
+                        <input id="formUrl" class="form__input" type="url" name="formURL" required/>
                     </div>
 
                     <div class="form__element">
                         <span class="form__label">Sexo</span>
 
-                        <input id="formFemale" type="checkbox" />
+                        <input id="formFemale" type="radio" name="gender" value="Femenino" />
                         <label for="formFemale">Femenino</label>
 
-                        <input id="formMale" type="checkbox" />
+                        <input id="formMale" type="radio" name="gender" value="Masculino" />
                         <label for="formMale">Masculino</label>
                     </div>
 
                     <div class="form__element">
                         <span class="form__label">Pasatiempos</span>
 
-                        <input id="formRead" type="checkbox" />
+                        <input id="formRead" type="checkbox" name="formRead" value="Leer" />
                         <label for="formRead">Leer</label>
 
-                        <input id="formSwim" type="checkbox" />
+                        <input id="formSwim" type="checkbox" name="formSwim" value="Nadar" />
                         <label for="formSwim">Nadar</label>
 
-                        <input id="formRun" type="checkbox" />
+                        <input id="formRun" type="checkbox" name="formRun" value="Correr" />
                         <label for="formRun">Correr</label>
 
                     </div>
 
                     <div class="form__element">
                         <label for="formNationality" class="form__label">Nacionalidad</label>
-                        <select id="formNationality" class="form__select">
-                            <option>Selecciona tu nacionalidad</option>
-                            <option>México</option>
-                            <option>Argentina</option>
-                            <option>Francia</option>
+                        <select id="formNationality" class="form__select" name="formNationality" required>
+                            <option value="">Selecciona tu nacionalidad</option>
+                            <option value="México">México</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Francia">Francia</option>
                         </select>
                     </div>
                     <div class="form__element">
                         <label for="formMessage" class="form__label">Escribe tu opinión</label>
-                        <textarea id="formMessage" ></textarea>
+                        <textarea id="formMessage" name=formMessage class="form__textarea" required></textarea>
                     </div>
 
                     <div class="form__element">
                         <input type="reset" value="Limpiar formulario" class="form__button" />
-                        <input type="submit" value="Enviar datos" class="form__button form__button--main"  />
+                        <input type="submit" value="Enviar datos" class="form__button form__button--main" />
 
                     </div>
 
@@ -132,6 +140,7 @@
     <!--Vincular los documentos java scrips siempre antes de la etiqueta de cierre de body-->
     <div id="js">
         <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="js/plugins/jquery.validate.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>
