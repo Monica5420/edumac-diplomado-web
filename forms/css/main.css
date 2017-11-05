@@ -19,11 +19,51 @@ img{display: block;
      margin: 0 auto;}
 /* Aqui empieza el estilo de header */
 
+.header-page{
+    background-color: #f5879f;
+    padding: 100px 0;
+}
+
+.header-page h1{
+    margin: 0;
+    color: #b486f0;
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+
+}
+
+
 /* Aqui empieza el estilo nav */
 
 /* Aqui empieza el estilo main */
+.main-page{
+    padding: 65px 0;
+}
 
+.main-page h2{
+    font-weight: 300;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #ca9f12;
+}
+
+.main-page h2:first-child {
+    margin-top: 0;
+    
+}
 /* Aqui empieza el estilo footer */
+
+.footer-page{
+    background-color: #6b6868;
+    padding: 50px 0;
+    text-align: center
+}
+
+.footer-page p{
+    margin: 0;
+    color: #b1a9a9
+}
 
 /* Forms */
 .form { border: 1px solid #87878b; 

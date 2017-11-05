@@ -10,18 +10,22 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="wrapper">
         <!--header.header-page-->
         <header class="header-page">
-            <h1>Formulario</h1>
+            <div class="container">
+                <h1>Formulario</h1>
+            </div>
         </header>
 
 
         <main class="main-page">
             <!--(section.section-page>h2{sección $}+p>lorem50)*4-->
             <section class="section-page">
-                <h2>Contacto</h2>
-                <!--
+                <div class="container">
+
+                    <h2>Contacto</h2>
+                    <!--
 
                     alt + shift+ f= es para darle formato ordenado al código
                     alt + shift= es para copiar la línea de código
@@ -61,78 +65,81 @@
 
                     -Atributo "selected" sirve para determinar un valor por defecto en los elementos de tipo select
                     - -->
-                <form id="formContact" action="#" class="form" method="post" novalidate>
-                    <div class="form__element">
-                        <label for="formName" class="form__label">Nombre:</label>
-                        <input id="formName" class="form__input" type="text" name="formName" required/>
-                    </div>
+                    <form id="formContact" action="php/enviar.php" class="form" method="post" novalidate>
+                        <div class="form__element">
+                            <label for="formName" class="form__label">Nombre:</label>
+                            <input id="formName" class="form__input" type="text" name="formName" required/>
+                        </div>
 
-                    <div class="form__element">
-                        <label for="formTel" class="form__label">Teléfono:</label>
-                        <input id="formTel" class="form__input" type="tel" name="formTel" required/>
-                    </div>
+                        <div class="form__element">
+                            <label for="formTel" class="form__label">Teléfono:</label>
+                            <input id="formTel" class="form__input" type="tel" name="formTel" required/>
+                        </div>
 
-                    <div class="form__element">
-                        <label for="formEmail" class="form__label">Correo electrónico:</label>
-                        <input id="formEmail" class="form__input" type="email" name="formEmail" required/>
-                    </div>
+                        <div class="form__element">
+                            <label for="formEmail" class="form__label">Correo electrónico:</label>
+                            <input id="formEmail" class="form__input" type="email" name="formEmail" required/>
+                        </div>
 
-                    <div class="form__element">
-                        <label for="formUrl" class="form__label">Sitio web:</label>
-                        <input id="formUrl" class="form__input" type="url" name="formURL" required/>
-                    </div>
+                        <div class="form__element">
+                            <label for="formUrl" class="form__label">Sitio web:</label>
+                            <input id="formUrl" class="form__input" type="url" name="formUrl" required/>
+                        </div>
 
-                    <div class="form__element">
-                        <span class="form__label">Sexo</span>
+                        <div class="form__element">
+                            <span class="form__label">Sexo</span>
 
-                        <input id="formFemale" type="radio" name="gender" value="Femenino" />
-                        <label for="formFemale">Femenino</label>
+                            <input id="formFemale" type="radio" name="formGender" value="Femenino" />
+                            <label for="formFemale">Femenino</label>
 
-                        <input id="formMale" type="radio" name="gender" value="Masculino" />
-                        <label for="formMale">Masculino</label>
-                    </div>
+                            <input id="formMale" type="radio" name="formGender" value="Masculino" />
+                            <label for="formMale">Masculino</label>
+                        </div>
 
-                    <div class="form__element">
-                        <span class="form__label">Pasatiempos</span>
+                        <div class="form__element">
+                            <span class="form__label">Pasatiempos</span>
 
-                        <input id="formRead" type="checkbox" name="formRead" value="Leer" />
-                        <label for="formRead">Leer</label>
+                            <input id="formRead" type="checkbox" name="formRead" value="Si" />
+                            <label for="formRead">Leer</label>
 
-                        <input id="formSwim" type="checkbox" name="formSwim" value="Nadar" />
-                        <label for="formSwim">Nadar</label>
+                            <input id="formSwim" type="checkbox" name="formSwim" value="Si" />
+                            <label for="formSwim">Nadar</label>
 
-                        <input id="formRun" type="checkbox" name="formRun" value="Correr" />
-                        <label for="formRun">Correr</label>
+                            <input id="formRun" type="checkbox" name="formRun" value="Si" />
+                            <label for="formRun">Correr</label>
 
-                    </div>
+                        </div>
 
-                    <div class="form__element">
-                        <label for="formNationality" class="form__label">Nacionalidad</label>
-                        <select id="formNationality" class="form__select" name="formNationality" required>
-                            <option value="">Selecciona tu nacionalidad</option>
-                            <option value="México">México</option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Francia">Francia</option>
-                        </select>
-                    </div>
-                    <div class="form__element">
-                        <label for="formMessage" class="form__label">Escribe tu opinión</label>
-                        <textarea id="formMessage" name=formMessage class="form__textarea" required></textarea>
-                    </div>
+                        <div class="form__element">
+                            <label for="formNationality" class="form__label">Nacionalidad</label>
+                            <select id="formNationality" class="form__select" name="formNationality" required>
+                                <option value="">Selecciona tu nacionalidad</option>
+                                <option value="México">México</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Francia">Francia</option>
+                            </select>
+                        </div>
+                        <div class="form__element">
+                            <label for="formMessage" class="form__label">Escribe tu opinión</label>
+                            <textarea id="formMessage" name=formMessage class="form__textarea" required></textarea>
+                        </div>
 
-                    <div class="form__element">
-                        <input type="reset" value="Limpiar formulario" class="form__button" />
-                        <input type="submit" value="Enviar datos" class="form__button form__button--main" />
+                        <div class="form__element">
+                            <input type="reset" value="Limpiar formulario" class="form__button" />
+                            <input type="submit" value="Enviar datos" class="form__button form__button--main" />
 
-                    </div>
+                        </div>
 
 
-                </form>
+                    </form>
+                </div>
             </section>
         </main>
 
-        <footer class="foter-page">
+        <footer class="footer-page">
+            <div class="container">
             <p>Todos los derechos reservados | Mónica Nicolás | 2017</p>
+        </div>
         </footer>
 
     </div>
