@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
+
+/*Grid*/
+@import url("lib/grid.css");
+
+/* Aqui empieza el estilo general */
+body{margin: 0;
+     font-family: 'Open Sans', sans-serif; 
+     font-size: 14px;
+    }
+
+ul,ol{margin: 0;
+     padding: 0; 
+     list-style-type: none;
+    }
+
+img{display: block;
+     max-width:100%;
+     margin: 0 auto;
+    }
+
+.container{ max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 16px;
+    }
+/* Aqui empieza el estilo de header */
+
+.header-page{
+    background: transparent url("../img/cocina.jpg") no-repeat center center;
+    padding: 100px 0 300px;
+    background-size: cover;
+}
+
+.header-page h1{
+    margin: 0;
+    font-size: 45px;
+    font-weight: 300px;
+    color:#FFF;
+    text-shadow: 0 0 10px #333;
+}
+
+/* Aqui empieza el estilo nav */
+
+/*
+    .menu .menu-item {}    Aplica al elemento que tiene la clase
+                            ".menu-item" y que es hijo directo de ".menu"
+                            sin importar en que nivel este.
+    .menu, .menu-item {}    Concatenación de selectores
+    .menu.menu-item {}      El elemento debe tener las dos clases
+    .menu > .menu-item {}   Aplica al elemento que tiene la clase
+                            ".menu-item" y que es hijo directo de ".menu"
+                            solo si esta en un primer nivel
+*/
+
+.nav-page{
+ background-color: #333;
+}
+.nav-page a{
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: all .3s;
+}
+
+.nav-page a:hover{
+    background-color: rgba(255, 255, 255, .2);
+}
+.nav-page__menu > li{
+display: inline-block;
+}
+
+.nav-page__menu > li > a{
+    text-transform: uppercase;
+}
+
+.nav-page__menu > li:hover .nav-page__submenu{
+   /* display: block;* esto es para que sea desplegable*/
+   max-height: 200px;
+   opacity: 1;
+}
+
+.nav-page__submenu{
+    position: absolute;
+    background-color: #333;
+    /*display: none; esto es para que sea desplegable*/
+    /*padding: 10px 0; esto es para que sea desplegable*/
+    width: 180px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s;
+    opacity: 0;
+}
+
+/* Aqui empieza el estilo main */
+.main-page{
+    padding: 65px 0;
+}
+
+
+/* Aqui empieza el estilo footer */
+.footer-page{
+    background-color: #333;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer-page p{
+    margin: 0;
+    color: #ccc;
+}
+
+/*Media Queries*/
+@media screen and (min-width:760px){
+
+.main-page h2:first-child{
+    margin-top: 0;
+    line-height: 1;}
+}
+
+/* Aqui empieza el estilo helper */
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: block;
+}
+
+.clearfix:after{
+    clear: both
+}
+
+.clear{
+    clear: both;
+}
+
+.margin-top,
+.mt{
+    margin-bottom: 25px;
+}
+
+.margin-bottom,
+.mb{
+    margin-bottom: 25px;
+}
+
+.margin-vertical{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

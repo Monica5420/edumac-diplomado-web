@@ -3,14 +3,24 @@
 /* fonts*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i');
 
+/*Grid*/
+@import url("lib/grid.css");
+
 /* Aqui empieza el estilo general */
-body{margin: 0; font-family: 'Open Sans', sans-serif; font-size: 14px;}
+body{margin: 0; 
+	font-family: 'Open Sans', sans-serif; 
+	font-size: 14px;}
 
-ul,ol{margin: 0; padding: 0; list-style-type: none;}
+ul,ol{margin: 0;
+	 padding: 0;
+	  list-style-type: none;}
 
-img{display: block; max-width:100%;}
+img{display: block; 
+	max-width:100%;}
 
-.container{ max-width: 1200px; margin: 0 auto;}
+.container{ max-width: 1200px; 
+	margin: 0 auto;
+	 padding: 0 16px;}
 /* Aqui empieza el estilo de header */
 
 /* Aqui empieza el estilo nav */
