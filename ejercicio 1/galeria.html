@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<!--esto es para especificar e idioma de nuestra pagina web-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <!-- Orden del archivo debe ser librerias, plugins,main.css-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!--Este vinculo es para poder usar los iconos de la libreria de la pagina font awersome -->
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--header.header-page-->
+        <header class="header-page">
+            <div class="container">
+                <h1>Cocina en casa</h1>
+            </div>
+
+        </header>
+
+        <!--nav.nav-page-->
+        <nav id="navPage" class="nav-page">
+            <div class="container">
+                <!--ul>(li>a{item $})*4-->
+                <ul class="nav-page__menu">
+                    <li>
+                        <a href="index.html">Sopas</a>
+                        <ul class="nav-page__submenu">
+                            <li>
+                                <a href="#">Pastas</a>
+                            </li>
+                            <li>
+                                <a href="#">Cremas</a>
+                            </li>
+                            <li>
+                                <a href="#">Frías</a>
+                            </li>
+                            <li>
+                                <a href="#">Calientes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Carnes</a>
+                        <ul class="nav-page__submenu">
+                            <li>
+                                <a href="#">Tipos de cortes</a>
+                            </li>
+                            <li>
+                                <a href="#">Tipos de terminos</a>
+                            </li>
+                            <li>
+                                <a href="#">Bebidas para carnes</a>
+                            </li>
+                            <li>
+                                <a href="#">Acompañamientos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Postres</a>
+                        <ul class="nav-page__submenu">
+                            <li>
+                                <a href="#">Pastas</a>
+                            </li>
+                            <li>
+                                <a href="#">Cremas</a>
+                            </li>
+                            <li>
+                                <a href="#">Frías</a>
+                            </li>
+                            <li>
+                                <a href="#">Calientes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                        <ul class="nav-page__submenu">
+                            <li>
+                                <a href="#">Tipos de cortes</a>
+                            </li>
+                            <li>
+                                <a href="#">Tipos de terminos</a>
+                            </li>
+                            <li>
+                                <a href="#">Bebidas para carnes</a>
+                            </li>
+                            <li>
+                                <a href="#">Acompañamientos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-page">
+            <!--(section.section-page>h2{sección $}+p>lorem50)*4-->
+            <section class="section-page section-page-slider">
+                <div class="container">
+                    <div id="slider" class="slider">
+                        <ul class="slides">
+                            <li>
+                                <h3>Slide 1</h3>
+                                <img src="img/cocina1.jpg" alt="">
+                            </li>
+                            <li>
+                                <h3>Slide 2</h3>
+                                <img src="img/cocina2.jpg" alt="">
+                            </li>
+                            <li>
+                                <h3>Slide 3</h3>
+                                <img src="img/cocina3.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+            </section>
+            <section class="section-page section-page-gallery">
+                <div class="container">
+                        <div class="row">
+                            <div class="col tb-col-3">
+                                <div class="section-page-gallery__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MvqB6JsRbsc?autoplay=1&controls=0" frameborder="0" gesture="media"
+                                        allow="encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col tb-col-3">
+                                <div class="section-page-gallery__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Uee_mcxvrw?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col tb-col-3">
+                                <div class="section-page-gallery__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcEyUNeZqmY?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col tb-col-3">
+                                <div class="section-page-gallery__video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aL_mTKWwRto?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-like" data-href="https://www.facebook.com/pg/edumac.polanco/posts/" data-layout="box_count" data-action="recommend" data-size="small" data-show-faces="true" data-share="true" data-width="100"></div>
+            </section>
+
+        </main>
+
+        <footer class="footer-page">
+            <div class="container">
+                <p>Todos los derechos reservados | Mónica Nicolás | 2017</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!--Vincular los documentos java scrips siempre antes de la etiqueta de cierre de body el primer codigo es el que se descrgo de la pagina de facebook para desarrolladores
+    es el codigo para el boton de like-->
+    <div id="fb-root"></div>
+   
+    <div id="js">
+        <script src="js/lib/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider-min.js"></script> 
+        <script src="js/plugins/jquery.sticky.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>
