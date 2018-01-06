@@ -147,19 +147,31 @@ display: inline-block;
     margin: 0 auto 200px;
     position: relative;
 }
-.slider h3 {
+
+.slider__content{
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
+    background-color:  rgba(0, 0, 0, .4);
+    padding: 25px;
+}
+
+.slider h3 {
+    
     font-size: 25px;
     font-weight: 400px;
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 0;
     color: #FFF;
-    padding: 25px;
-    background-color:  rgba(0, 0, 0, .4);
+   
 }
+
+.slider a{
+    color: #FFF;
+    display: inline-block;
+}
+
 
 .flex-control-nav{
     position: absolute;
@@ -191,6 +203,31 @@ display: inline-block;
 
 .flex-control-nav .flex-active{
     background-color: #333;
+}
+
+.flex-next,
+.flex-prev{
+    position: absolute;
+    top: 50%;
+    font-size: 35px;
+    color: #FFF;
+    text-shadow: 0 0 5px #000;
+    opacity: .7;
+    z-index: 3;
+    transition: all .3s;
+}
+.flex-next :hover,
+.flex-prev :hover{
+    opacity: 1;
+}
+
+.flex-next{
+    right: 15px;
+    
+}
+
+.flex-prev{
+    left: 15px;
 }
 /* Aqui empieza el estilo footer */
 .footer-page{

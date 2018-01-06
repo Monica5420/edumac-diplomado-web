@@ -8,7 +8,10 @@
     <!-- Orden del archivo debe ser librerias, plugins,main.css-->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
-    <!--Este vinculo es para poder usar los iconos de la libreria de la pagina font awersome -->
+        <!-- Pluging fancy box para abrir pdf en la misma ventana en una ventana emergente en el mismo sitio -->
+        <link rel="stylesheet" href="css/plugins/jquery.fancybox.min.css">
+    <!-- Este vinculo es para poder usar los iconos de la libreria de la pagina font awersome -->
+
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -109,75 +112,106 @@
                     <div id="slider" class="slider">
                         <ul class="slides">
                             <li>
-                                <h3>Slide 1</h3>
+                                <div class="slider__content">
+                                    <h3>Slide 1</h3>
+                                    <a href="files/libro-1.pdf">Ver PDF en la misma pestaña</a>
+                                </div>
                                 <img src="img/cocina1.jpg" alt="">
                             </li>
                             <li>
-                                <h3>Slide 2</h3>
+                                    <div class="slider__content">
+                                            <h3>Slide 2 </h3>
+                                            <a href="files/libro-1.pdf" target="blank">Ver PDF en otra pestaña</a>
+                                        </div>
                                 <img src="img/cocina2.jpg" alt="">
                             </li>
                             <li>
-                                <h3>Slide 3</h3>
+                                <div class="slider__content">
+                                        <h3>Slide 3</h3>
+                                        <a href="files/libro-1.pdf" download="">Descargar PDF</a>
+                                    </div>
                                 <img src="img/cocina3.jpg" alt="">
+                            </li>
+                            <li>
+                                    <div class="slider__content">
+                                            <h3>Slide 4</h3>
+                                            <a href="files/libro-1.pdf" class="modal-box-pdf" >Abrir PDF en Modal Box</a>
+                                        </div>
+                                    <img src="img/cocina3.jpg" alt="">
+                                </li>
+                        </ul>
+                        <ul class="slider__direction-nav">
+                            <li>
+                                <a href="#" class="flex-prev">
+                                    <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex-next">
+                                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
+
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
+
 
             </section>
             <section class="section-page section-page-gallery">
                 <div class="container">
-                        <div class="row">
-                            <div class="col tb-col-3">
-                                <div class="section-page-gallery__video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MvqB6JsRbsc?autoplay=1&controls=0" frameborder="0" gesture="media"
-                                        allow="encrypted-media" allowfullscreen></iframe>
-                                </div>
+                    <div class="row">
+                        <div class="col tb-col-3">
+                            <div class="section-page-gallery__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MvqB6JsRbsc?autoplay=1&controls=0" frameborder="0" gesture="media"
+                                    allow="encrypted-media" allowfullscreen></iframe>
                             </div>
-                            <div class="col tb-col-3">
-                                <div class="section-page-gallery__video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Uee_mcxvrw?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
-                                        allowfullscreen></iframe>
-                                </div>
+                        </div>
+                        <div class="col tb-col-3">
+                            <div class="section-page-gallery__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8Uee_mcxvrw?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                    allowfullscreen></iframe>
                             </div>
-                            <div class="col tb-col-3">
-                                <div class="section-page-gallery__video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcEyUNeZqmY?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
-                                        allowfullscreen></iframe>
-                                </div>
+                        </div>
+                        <div class="col tb-col-3">
+                            <div class="section-page-gallery__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/rcEyUNeZqmY?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                    allowfullscreen></iframe>
                             </div>
-                            <div class="col tb-col-3">
-                                <div class="section-page-gallery__video">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/aL_mTKWwRto?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
-                                        allowfullscreen></iframe>
-                                </div>
+                        </div>
+                        <div class="col tb-col-3">
+                            <div class="section-page-gallery__video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/aL_mTKWwRto?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                                    allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
+    </div>
 
-                <div class="fb-like" data-href="https://www.facebook.com/pg/edumac.polanco/posts/" data-layout="box_count" data-action="recommend" data-size="small" data-show-faces="true" data-share="true" data-width="100"></div>
-            </section>
+    <div class="fb-like" data-href="https://www.facebook.com/pg/edumac.polanco/posts/" data-layout="box_count" data-action="recommend"
+        data-size="small" data-show-faces="true" data-share="true" data-width="100"></div>
+    </section>
 
-        </main>
+    </main>
 
-        <footer class="footer-page">
-            <div class="container">
-                <p>Todos los derechos reservados | Mónica Nicolás | 2017</p>
-            </div>
-        </footer>
+    <footer class="footer-page">
+        <div class="container">
+            <p>Todos los derechos reservados | Mónica Nicolás | 2017</p>
+        </div>
+    </footer>
 
     </div>
 
     <!--Vincular los documentos java scrips siempre antes de la etiqueta de cierre de body el primer codigo es el que se descrgo de la pagina de facebook para desarrolladores
     es el codigo para el boton de like-->
     <div id="fb-root"></div>
-   
+
     <div id="js">
         <script src="js/lib/jquery-3.2.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider-min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.4/jquery.flexslider-min.js"></script>
         <script src="js/plugins/jquery.sticky.js"></script>
+        <script src="js/plugins/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>

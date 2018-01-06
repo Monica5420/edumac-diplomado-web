@@ -1,9 +1,18 @@
 $(function() {
     var navPage=$("#navPage");
     var slider = $("#slider");
+    var modalBoxPdf= $(".modal-box-pdf");
 
-    navPage.sticky({ topSpacing:0});
-    slider.flexslider();
+    navPage.sticky({ zIndex:5});
+    slider.flexslider({
+        customDirectionNav: $(".slider__direction-nav a")
+    });
+
+    modalBoxPdf. fancybox({
+        type: "iframe",
+        overlayColor: "#FFF",
+        overlayOpacity: 0.1,
+    });
 });
 
 // SDK facebook
